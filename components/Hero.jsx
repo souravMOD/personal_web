@@ -76,7 +76,7 @@ export default function Hero() {
             {/* Gradient ring around image */}
             <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-full blur-sm opacity-75" />
             <img
-              src="/profile.jpg"
+              src="profile.jpg/profile.jpg"
               alt="Sourav Modak"
               width={150}
               height={150}
