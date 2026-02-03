@@ -80,7 +80,7 @@ export default function Hero() {
               alt="Sourav Modak"
               width={150}
               height={150}
-              className="relative rounded-full border-2 border-background object-cover"
+              className="relative w-[150px] h-[150px] rounded-full border-2 border-background object-cover"
             />
           </div>
         </motion.div>
