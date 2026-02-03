@@ -89,7 +89,7 @@ export default function Publications() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <span className="text-primary font-mono text-sm">// RESEARCH</span>
+          <span className="text-primary font-mono text-sm">{'// RESEARCH'}</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-2">
             Publications &{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
@@ -201,7 +201,7 @@ export default function Publications() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 p-6 rounded-xl border border-dashed border-white/10"
         >
-          <h3 className="text-sm font-mono text-accent mb-4">// IN PROGRESS</h3>
+          <h3 className="text-sm font-mono text-accent mb-4">{'// IN PROGRESS'}</h3>
           <ul className="space-y-3">
             <li className="text-muted text-sm flex items-start gap-2">
               <span className="text-accent mt-1">→</span>

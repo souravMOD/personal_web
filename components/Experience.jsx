@@ -61,7 +61,7 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <span className="text-primary font-mono text-sm">// EXPERIENCE</span>
+          <span className="text-primary font-mono text-sm">{'// EXPERIENCE'}</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-2">
             Where I&apos;ve{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-accent">

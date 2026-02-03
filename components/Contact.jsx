@@ -5,6 +5,25 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Mail, Linkedin, Github, MapPin, Send } from 'lucide-react';
 
+// Static class mappings for Tailwind (dynamic classes don't work with JIT)
+const colorClasses = {
+  primary: {
+    border: 'hover:border-primary/30',
+    bg: 'bg-primary/10',
+    text: 'text-primary',
+  },
+  secondary: {
+    border: 'hover:border-secondary/30',
+    bg: 'bg-secondary/10',
+    text: 'text-secondary',
+  },
+  accent: {
+    border: 'hover:border-accent/30',
+    bg: 'bg-accent/10',
+    text: 'text-accent',
+  },
+};
+
 const contactLinks = [
   {
     icon: Mail,
@@ -46,7 +65,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm">// GET IN TOUCH</span>
+          <span className="text-primary font-mono text-sm">{'// GET IN TOUCH'}</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-2 mb-4">
             Let&apos;s{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">
@@ -71,12 +90,12 @@ export default function Contact() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
               whileHover={{ y: -4 }}
-              className={`group p-6 rounded-xl bg-surface border border-white/5 hover:border-${link.color}/30 transition-all duration-300`}
+              className={`group p-6 rounded-xl bg-surface border border-white/5 ${colorClasses[link.color].border} transition-all duration-300`}
             >
               <div
-                className={`w-12 h-12 rounded-lg bg-${link.color}/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                className={`w-12 h-12 rounded-lg ${colorClasses[link.color].bg} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
               >
-                <link.icon className={`text-${link.color}`} size={24} />
+                <link.icon className={colorClasses[link.color].text} size={24} />
               </div>
               <h3 className="font-display font-semibold text-foreground mb-1">
                 {link.label}

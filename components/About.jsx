@@ -70,7 +70,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <span className="text-primary font-mono text-sm">// ABOUT ME</span>
+          <span className="text-primary font-mono text-sm">{'// ABOUT ME'}</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-2">
             Bridging Research{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
@@ -161,7 +161,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-20"
         >
-          <h3 className="text-sm font-mono text-primary mb-8">// EDUCATION</h3>
+          <h3 className="text-sm font-mono text-primary mb-8">{'// EDUCATION'}</h3>
           <div className="grid md:grid-cols-2 gap-6">
             {education.map((edu, index) => (
               <motion.div
