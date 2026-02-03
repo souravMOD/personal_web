@@ -13,7 +13,7 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com/souravmodak', label: 'GitHub' },
+  { icon: Github, href: 'https://github.com/souravMod', label: 'GitHub' },
   { icon: Linkedin, href: 'https://linkedin.com/in/sourav-modak-a04237157', label: 'LinkedIn' },
   { icon: Mail, href: 'mailto:s.modak@uni-hohenheim.de', label: 'Email' },
 ];
